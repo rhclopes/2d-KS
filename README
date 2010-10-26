@@ -1,0 +1,55 @@
+Files in this tarball
+ README: file thatyou're reading
+ c.range-counting-tree: directory with range counting tree
+    |
+    |-- rct.h: interface to range tree
+    |-- rct.c: range tree implementation
+ point: directory with definition of 2-d point
+    |
+    |-- point.h: interface
+    |-- point.c: implementation
+ peacock: directory with Peacock's test
+    |- c.bf: brute force implmentation  iof Peacock's test
+    |- c.rct: range counting tree implementation of Peacock's test
+        |
+        |- peacock.h: interface of Peacock's test
+        |- peacock.c: implementation of Peacock's test using range trees
+        |- statistic.c: test program
+ ff: directory with Fasano and Franceschini's test
+    |- c.rct: range counting tree implementation of the test
+        |
+        |- ff.h: interface to the test
+        |- ff.c: implementation of the test using range trees
+        |- statistic.c: test program
+
+
+Compilation:
+
+ From peacock/c.rct:
+
+    gcc -std=c99 -Wall rct.c peacock.c point.c statistic.c -o p
+
+ From ff/c.rct:
+     gcc -std=c99 -Wall rct.c ff.c point.c statistic.c -o ff
+
+Execution:
+    the test programs share the same interface:
+      they read the points from STDIN
+        one point per line (x-coordinate, followed by space, followed by y-coordinate)
+      they assume assume a unique input stream with all points from both samples
+      they receive two command-line arguments: numeber of points in each sample
+
+    From ff/c.rct, assuming that s0 contains 1024 and s1 contains 1024 points
+
+    cat s0 | cat _ s1 | ./ff 1024 1024
+
+    both programs output time for computing and distance
+
+IMPORTANT:
+ - time is computed using clock. not reliable for long runs
+ - distance is the value returned. NOT probability
+ - See Peacock's or Fasano and Franceschini's papers (also Press et ali's "Numerical recipes") for trivial algorithm 
+ for probability computation
+ 
+
+# vi:sw=4 ts=4 sm et autoindent backspace=eol,start,indent lines=35 columns=120
