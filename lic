@@ -1,0 +1,34 @@
+
+// 2D-KS $Id: Range Counting Tree
+// Author:  Raul H. C. Lopes
+
+/**********************************************************************************
+ * Package: 2D-KS                                                                 *
+ *                                                                                *
+ * Description:                                                                   *
+ *      Range Counting Tree                                                       *
+ *                                                                                *
+ * Author (alphabetical):                                                         *
+ *      Raul H. Cardoso Lopes  - Brunel Unviversity                               *
+ *                               Federal University of Espirito Santo             *
+ *          http://www.inf.ufes.br/~/raulh                                        *
+ *          email: rlopes at cern dot ch                                          *
+ *                 rhclopes at yahoo dot com dot br                               *
+ *                                                                                *
+ * Copyright (c) 2007:                                                            *
+ *      Brunel University                                                         *
+ *                                                                                *
+ * This program is free software; you can redistribute it and/or modify           *
+ * it under the terms of the GNU General Public License as published by           *  
+ * the Free Software Foundation; either version 2 of the License, or (at          *
+ * your option) any later version.                                                * 
+ *                                                                                *
+ * This program is distributed in the hope that it will be useful, but            *
+ * WITHOUT ANY WARRANTY; without even the implied warranty of                     *
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU              *
+ * General Public License for more details.                                       *
+ *                                                                                *
+ *                                                                                *
+ **********************************************************************************/
+
+//# vi:sw=2 ts=2 sm et cindent backspace=eol,start,indent lines=35 columns=120
